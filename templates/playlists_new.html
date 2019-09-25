@@ -1,16 +1,15 @@
-<!-- templates/playlists_index.html -->
+<!--templates/playlists_new.html-->
 {% extends 'base.html' %}
 
 {% block content %}
-<form method='POST' action='/playlists'>
+<form method="POST" action="/playlists">
     <fieldset>
         <legend>New Playlist</legend>
         <!-- TITLE -->
         <p>
-            <label for='playlist-title'>Title</label><br>
-            <input id='playlist-title' type='text' name='title' />
+            <label for="title">Title</label><br>
+            <input type="text" name="title" />
         </p>
-
         <!-- DESCRIPTION -->
         <p>
             <label for='description'>Description</label><br>
