@@ -6,7 +6,8 @@ from bson.objectid import ObjectId
 import os
 from app import app
 
-host = os.environ.get('MONGODB_URI', 'mongodb://localhost:27017/Playlister')
+# host = os.environ.get('MONGODB_URI', 'mongodb://localhost:27017/Playlister')
+host = os.environ.get('MONGODB_URI', 'mongodb://<djcatisamazing>:<makeschool2019>@ds229118.mlab.com:29118/heroku_sfqn3tk9')
 client = MongoClient(host=f'{host}?retryWrites=false')
 db = client.get_default_database()
 playlists = db.playlists
