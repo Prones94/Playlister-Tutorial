@@ -4,7 +4,6 @@ from flask import Flask, render_template, request, redirect, url_for
 from pymongo import MongoClient
 from bson.objectid import ObjectId
 import os
-# from app import app
 
 # host = os.environ.get('MONGODB_URI', 'mongodb://localhost:27017/Playlister')
 host = os.environ.get('MONGODB_URI', 'mongodb://<djcatisamazing>:<makeschool2019>@ds229118.mlab.com:29118/heroku_sfqn3tk9')
